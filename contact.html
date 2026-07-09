@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inquire — Shtern Amber</title>
+  <meta name="description" content="Begin a conversation with Shtern Amber. Every commission starts with a single question — what story should this piece carry?">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">Shtern Amber</a>
+    <ul class="nav-links">
+      <li class="nav-item"><a href="#">Collections</a>
+        <div class="dropdown">
+          <a href="memorial-boards.html">Memorial Boards</a><a href="donor-walls.html">Donor Walls</a><a href="tree-of-life.html">Tree of Life</a><a href="mezuzah.html">Mezuzah Cases</a><a href="torah-pointers.html">Torah Pointers</a><a href="challah-boards.html">Challah Boards</a><a href="home-blessings.html">Home Blessings</a><a href="fundraising-art.html">Fundraising Art</a>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li><li><a href="philosophy.html">Philosophy</a></li><li><a href="contact.html">Inquire</a></li>
+    </ul>
+    <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" id="menuClose">✕</button>
+    <a href="memorial-boards.html" class="mobile-menu-sub">Memorial Boards</a><a href="donor-walls.html" class="mobile-menu-sub">Donor Walls</a><a href="tree-of-life.html" class="mobile-menu-sub">Tree of Life</a><a href="mezuzah.html" class="mobile-menu-sub">Mezuzah Cases</a><a href="torah-pointers.html" class="mobile-menu-sub">Torah Pointers</a><a href="challah-boards.html" class="mobile-menu-sub">Challah Boards</a><a href="home-blessings.html" class="mobile-menu-sub">Home Blessings</a><a href="fundraising-art.html" class="mobile-menu-sub">Fundraising Art</a>
+    <a href="about.html">About</a><a href="philosophy.html">Philosophy</a><a href="contact.html">Inquire</a>
+  </div>
+
+  <div class="page-hero">
+    <div class="page-hero-bg"></div><div class="page-hero-glow"></div>
+    <div class="container page-hero-content">
+      <p class="label">Begin a Conversation</p>
+      <h1>Inquire</h1>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="label">The Process</p>
+          <h2>Every commission starts with a single question.</h2>
+          <div class="divider"></div>
+          <p>What story should this piece carry?</p>
+          <p>We read every inquiry carefully before responding. Tell us about the space, the community, the occasion, and the people the piece will honour. The more we understand at the outset, the more precisely we can propose something right.</p>
+          <p>We respond to all inquiries within two business days. We are closed on Shabbat and Jewish holidays.</p>
+
+          <div class="contact-detail" style="margin-top: 2.5rem;">
+            <div class="contact-detail-item">
+              <span class="contact-detail-item-label">Email</span>
+              <span class="contact-detail-item-val"><a href="mailto:shternamber@gmail.com" style="color:var(--amber);">shternamber@gmail.com</a></span>
+            </div>
+            <div class="contact-detail-item">
+              <span class="contact-detail-item-label">Hours</span>
+              <span class="contact-detail-item-val">10:00 AM – 9:00 PM<br>Sunday through Friday</span>
+            </div>
+            <div class="contact-detail-item">
+              <span class="contact-detail-item-label">Ships From</span>
+              <span class="contact-detail-item-val">United States</span>
+            </div>
+            <div class="contact-detail-item">
+              <span class="contact-detail-item-label">Closed</span>
+              <span class="contact-detail-item-val">Shabbat &amp; all Jewish holidays</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <form class="contact-form" name="contact" action="https://formspree.io/f/shternamber@gmail.com" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="your@email.com">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="organisation">Organisation or Institution (if applicable)</label>
+              <input type="text" id="organisation" name="organisation" placeholder="Synagogue, school, community centre…">
+            </div>
+            <div class="form-group">
+              <label for="type">Type of Commission</label>
+              <select id="type" name="type">
+                <option value="">Select a category</option>
+                <option>Memorial Board</option>
+                <option>Donor Recognition Wall</option>
+                <option>Tree of Life</option>
+                <option>Mezuzah Case</option>
+                <option>Torah Pointer</option>
+                <option>Challah Board</option>
+                <option>Home Blessing Panel</option>
+                <option>Fundraising Artwork</option>
+                <option>Other / Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell us about the piece</label>
+              <textarea id="message" name="message" required placeholder="Describe the space, the occasion, the people it will honour, and any dimensions or constraints you're aware of. There are no wrong answers here — the more you share, the better we can respond."></textarea>
+            </div>
+            <button type="submit" class="btn btn-amber" style="width:100%; justify-content:center; margin-top:0.5rem;">Send Inquiry</button>
+            <p style="font-size:0.75rem; color:var(--grey); text-align:center; margin-top:1rem;">We respond within two business days.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo-text">Shtern Amber</div>
+      <div class="footer-services">
+        <span class="footer-service">Exclusive Artwork</span>
+        <span class="footer-service">Handmade</span>
+        <span class="footer-service">Natural Stone &amp; Amber</span>
+      </div>
+      <p class="footer-schedule">Business hours: 10:00 AM &ndash; 9:00 PM daily &nbsp;&middot;&nbsp; Closed on Shabbat and Jewish holidays</p>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Shtern Amber Collection</span>
+      <a href="#">Privacy Policy</a>
+      <div class="footer-socials">
+        <span class="footer-socials-label">Follow us</span>
+        <a href="https://www.instagram.com/shtern.amber/" class="footer-social-link" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/shternamber/" class="footer-social-link" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
